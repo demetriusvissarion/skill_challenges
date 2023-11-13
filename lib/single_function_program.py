@@ -1,13 +1,19 @@
-def extract_uppercase(mixed_words):
-    """Extracts uppercase words from a string
+import math
+class TimeCalculator:
+    def __init__(self):
+        self.words = 1
 
-    Parameters: (list all parameters and their types)
-        mixed_words: a string containing words (e.g. "hello WORLD")
+    def read_time_calculator(self, text):
+        if text == None or len(text) <= 0:
+            raise Exception("Invalid text, must have at least one character.")
+        if len(text) > 0:
+            for i in range(0, len(text)):
+                if text[i] == " ":
+                    words += 1
+            minutes = math.ceil(words / 200)
+            return minutes
 
-    Returns: (state the return value and its type)
-        a list of strings, each one a word (e.g. ["WORLD"])
-
-    Side effects: (state any side effects)
-        This function doesn't print anything or have any other side-effects
-    """
-    pass # Test-driving means _not_ writing any code here yet.
+    
+# calculator = TimeCalculator()
+# print(calculator.read_time_calculator(""))
+# print(calculator.read_time_calculator("I need fruits"))
