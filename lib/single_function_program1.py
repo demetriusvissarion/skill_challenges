@@ -9,8 +9,8 @@ class TimeCalculator:
         if len(text) > 0:
             for i in range(0, len(text)):
                 if text[i] == " ":
-                    words += 1
-            minutes = math.ceil(words / 200)
+                    self.words += 1
+            minutes = math.ceil(self.words / 200)
             return minutes
 
     

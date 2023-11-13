@@ -1,5 +1,5 @@
 import pytest
-from lib.single_function_program import *
+from lib.single_function_program1 import *
 
 """
 Given a sentence 
@@ -24,7 +24,7 @@ def test_read_time_calculator_returns_one_for_short_text():
 Given an empty string
 It throws an error
 """
-def test_read_time_calculator_returns_one_for_short_text():
+def test_throws_error_when_given_empty_string():
     calculator = TimeCalculator()
     with pytest.raises(Exception) as e: 
         calculator.read_time_calculator('')
@@ -35,7 +35,7 @@ def test_read_time_calculator_returns_one_for_short_text():
 Given a None value
 It throws an error
 """
-def test_read_time_calculator_returns_error_for_none_value():
+def test_throws_error_when_given_none_value():
     calculator = TimeCalculator()
     with pytest.raises(Exception) as e: 
         calculator.read_time_calculator(None)

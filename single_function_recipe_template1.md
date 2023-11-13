@@ -50,9 +50,9 @@ read_time_calculator("Lorem ipsum dolor sit amet, consectetur adipiscing elit. F
 
 """
 Given an empty string
-It returns zero
+It throws an error
 """
-read_time_calculator("") => 0
+read_time_calculator("") throws an error
 
 """
 Given a None value
@@ -69,7 +69,7 @@ _After each test you write, follow the test-driving process of red, green, refac
 
 ```python
 
-from lib.read_time_calculator import *
+from lib.single_function_program1 import *
 
 """
 Given a sentence 
